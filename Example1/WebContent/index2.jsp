@@ -7,14 +7,12 @@
 <title>Exemple</title>
 </head>
 <body>
-	
-	<form action="result.jsp">
-		<%-- --%>
-		<!-- asd -->
-		<jsp:useBean id="person" scope="session" class="teste.Person" type="teste.Person">
-		<jsp:setProperty property="name" name="person" value="Tiago"/>
-		</jsp:useBean>
-		<input type="submit" value="Teste">
+	<form method="post" action="result2.jsp">
+		
+		Name : <input type="text" name="name"/>
+		<jsp:useBean id="person" class="teste.Person" type="teste.Person"/>
+		<jsp:setProperty property="name" name="person" value="*"/>
+		<input type="submit" value="OK">
 	</form>
 </body>
 </html>

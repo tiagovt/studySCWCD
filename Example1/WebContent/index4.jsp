@@ -7,14 +7,7 @@
 <title>Exemple</title>
 </head>
 <body>
-	
-	<form action="result.jsp">
-		<%-- --%>
-		<!-- asd -->
-		<jsp:useBean id="person" scope="session" class="teste.Person" type="teste.Person">
-		<jsp:setProperty property="name" name="person" value="Tiago"/>
-		</jsp:useBean>
-		<input type="submit" value="Teste">
-	</form>
+	<jsp:include page="index3.jsp"/>
+	<%@ include file="index3.jsp" %>
 </body>
 </html>
