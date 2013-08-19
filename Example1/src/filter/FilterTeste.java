@@ -37,6 +37,7 @@ public class FilterTeste implements Filter {
 		request.setAttribute("teste", "Teste filtro");
 		chain.doFilter(request, response);
 		System.out.println("chamo novamente o filtro " + new Date());
+		
 	}
 
 	/**

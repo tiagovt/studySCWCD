@@ -9,6 +9,9 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <session-config>
+    <session-timeout>10</session-timeout>
+  </session-config>
   <login-config>
     <auth-method>BASIC</auth-method>
   </login-config>
@@ -101,5 +104,38 @@
   <servlet-mapping>
     <servlet-name>InvalidSession</servlet-name>
     <url-pattern>/invalidSession</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>bean.Dog</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>AddAttrSession</display-name>
+    <servlet-name>AddAttrSession</servlet-name>
+    <servlet-class>servlet.AddAttrSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddAttrSession</servlet-name>
+    <url-pattern>/addAttrSession</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DelAttrSession</display-name>
+    <servlet-name>DelAttrSession</servlet-name>
+    <servlet-class>servlet.DelAttrSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DelAttrSession</servlet-name>
+    <url-pattern>/delAttrSession</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TesteDog</display-name>
+    <servlet-name>TesteDog</servlet-name>
+    <servlet-class>servlet.TesteDog</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TesteDog</servlet-name>
+    <url-pattern>/testeDog</url-pattern>
   </servlet-mapping>
 </web-app>
